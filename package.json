@@ -4,6 +4,7 @@
   "description": "Romanizes Hangul (Korean) characters",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,5 +13,8 @@
     "unicode"
   ],
   "author": "Tyriar",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^2.0.3"
+  }
 }

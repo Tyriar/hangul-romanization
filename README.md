@@ -16,3 +16,9 @@ var hangulRomanization = require('hangul-romanization');
 var romanization = hangulRomanization.convert('행복');
 console.log(romanization); // 'haengbok'
 ```
+
+## Building
+
+```bash
+npm run build
+```
