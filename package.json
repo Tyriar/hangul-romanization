@@ -1,6 +1,6 @@
 {
   "name": "hangul-romanization",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Romanizes Hangul (Korean) characters",
   "main": "dist/index.js",
   "scripts": {
