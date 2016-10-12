@@ -1,7 +1,7 @@
 {
   "name": "hangul-romanization",
   "version": "0.0.1",
-  "description": "Converts Hangul (Korean) characters to English",
+  "description": "Romanizes Hangul (Korean) characters",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
