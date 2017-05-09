@@ -2,7 +2,7 @@
  * @license MIT Copyright 2016 Daniel Imms (http://www.growingwiththeweb.com)
  */
 
-import { IHangulConversionSystem } from './hangulConversionSystem';
+import { IHangulConversionSystem } from './hangulConversionSystem.ts';
 
 export const REVISED_ROMANIZATION_OF_KOREAN: IHangulConversionSystem = {
   vowels: [

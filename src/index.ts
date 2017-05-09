@@ -2,7 +2,7 @@
  * @license MIT Copyright 2016 Daniel Imms (http://www.growingwiththeweb.com)
  */
 
-import { REVISED_ROMANIZATION_OF_KOREAN } from './conversionSystems/revisedRomanizationOfKorean';
+import { REVISED_ROMANIZATION_OF_KOREAN } from './conversionSystems/revisedRomanizationOfKorean.ts';
 
 const UNICODE_OFFSET = 44032;
 const UNICODE_MAX = 55215;
