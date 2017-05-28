@@ -1,8 +1,9 @@
+"use strict";
 /**
  * @license MIT Copyright 2016 Daniel Imms (http://www.growingwiththeweb.com)
  */
-"use strict";
-var revisedRomanizationOfKorean_1 = require('./conversionSystems/revisedRomanizationOfKorean');
+Object.defineProperty(exports, "__esModule", { value: true });
+var revisedRomanizationOfKorean_1 = require("./conversionSystems/revisedRomanizationOfKorean");
 var UNICODE_OFFSET = 44032;
 var UNICODE_MAX = 55215;
 function convertCharacter(char) {

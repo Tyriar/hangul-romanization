@@ -1,4 +1,5 @@
+"use strict";
 /**
  * @license MIT Copyright 2016 Daniel Imms (http://www.growingwiththeweb.com)
  */
-"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
