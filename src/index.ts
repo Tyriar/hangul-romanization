@@ -8,7 +8,6 @@ const UNICODE_OFFSET = 44032;
 const UNICODE_MAX = 55215;
 
 function convertCharacter(char: string) {
-  let result = '';
   const charCode = char.charCodeAt(0);
   const isHangul = charCode >= UNICODE_OFFSET && charCode < UNICODE_MAX;
   if (isHangul) {
@@ -21,19 +20,14 @@ function convertCharacter(char: string) {
       unicodeOffset /= REVISED_ROMANIZATION_OF_KOREAN.vowels.length;
       const leadOffset = unicodeOffset;
 
-      result += REVISED_ROMANIZATION_OF_KOREAN.consonants.initial[leadOffset];
-      result += REVISED_ROMANIZATION_OF_KOREAN.vowels[vowelOffset];
-      result += REVISED_ROMANIZATION_OF_KOREAN.consonants.final[trailerOffset];
-  } else {
-    result = char;
-  }
-  return result;
+      const result = REVISED_ROMANIZATION_OF_KOREAN.consonants.initial[leadOffset]
+        + REVISED_ROMANIZATION_OF_KOREAN.vowels[vowelOffset]
+        + REVISED_ROMANIZATION_OF_KOREAN.consonants.final[trailerOffset];
+      return result;
+  } 
+  return char;
 }
 
 export function convert(text: string): string {
-  let result = '';
-  for (let i = 0; i < text.length; i++) {
-    result += convertCharacter(text[i]);
-  }
-  return result;
+  return text.split('').map(convertCharacter).join('');
 }
