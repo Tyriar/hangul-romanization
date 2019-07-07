@@ -7,7 +7,6 @@ var revisedRomanizationOfKorean_1 = require("./conversionSystems/revisedRomaniza
 var UNICODE_OFFSET = 44032;
 var UNICODE_MAX = 55215;
 function convertCharacter(char) {
-    var result = '';
     var charCode = char.charCodeAt(0);
     var isHangul = charCode >= UNICODE_OFFSET && charCode < UNICODE_MAX;
     if (isHangul) {
@@ -19,20 +18,14 @@ function convertCharacter(char) {
         unicodeOffset -= vowelOffset;
         unicodeOffset /= revisedRomanizationOfKorean_1.REVISED_ROMANIZATION_OF_KOREAN.vowels.length;
         var leadOffset = unicodeOffset;
-        result += revisedRomanizationOfKorean_1.REVISED_ROMANIZATION_OF_KOREAN.consonants.initial[leadOffset];
-        result += revisedRomanizationOfKorean_1.REVISED_ROMANIZATION_OF_KOREAN.vowels[vowelOffset];
-        result += revisedRomanizationOfKorean_1.REVISED_ROMANIZATION_OF_KOREAN.consonants.final[trailerOffset];
+        var result = revisedRomanizationOfKorean_1.REVISED_ROMANIZATION_OF_KOREAN.consonants.initial[leadOffset]
+            + revisedRomanizationOfKorean_1.REVISED_ROMANIZATION_OF_KOREAN.vowels[vowelOffset]
+            + revisedRomanizationOfKorean_1.REVISED_ROMANIZATION_OF_KOREAN.consonants.final[trailerOffset];
+        return result;
     }
-    else {
-        result = char;
-    }
-    return result;
+    return char;
 }
 function convert(text) {
-    var result = '';
-    for (var i = 0; i < text.length; i++) {
-        result += convertCharacter(text[i]);
-    }
-    return result;
+    return text.split('').map(convertCharacter).join('');
 }
 exports.convert = convert;
