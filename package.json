@@ -1,6 +1,6 @@
 {
   "name": "hangul-romanization",
-  "package": "Tyriar/hangul-romanization",
+  "package": "https://github.com/Tyriar/hangul-romanization",
   "version": "0.0.7",
   "description": "Romanizes Hangul (Korean) characters",
   "main": "dist/index.js",
