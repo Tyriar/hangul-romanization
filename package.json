@@ -15,8 +15,8 @@
   ],
   "author": "Tyriar",
   "license": "MIT",
-  "dependencies": {
-    "typescript": "^2.0.3"
+  "devDependencies": {
+    "typescript": "^4.8.2"
   },
   "files": [
     "dist/*.js",
