@@ -3,6 +3,7 @@
  * @license MIT Copyright 2016 Daniel Imms (http://www.growingwiththeweb.com)
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.convert = void 0;
 var revisedRomanizationOfKorean_1 = require("./conversionSystems/revisedRomanizationOfKorean");
 var UNICODE_OFFSET = 44032;
 var UNICODE_MAX = 55215;

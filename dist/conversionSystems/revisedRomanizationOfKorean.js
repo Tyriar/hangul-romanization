@@ -3,6 +3,7 @@
  * @license MIT Copyright 2016 Daniel Imms (http://www.growingwiththeweb.com)
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.REVISED_ROMANIZATION_OF_KOREAN = void 0;
 exports.REVISED_ROMANIZATION_OF_KOREAN = {
     vowels: [
         'a',
